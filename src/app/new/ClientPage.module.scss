@@ -1,0 +1,102 @@
+@import '../../styles/FormTransitions.scss';
+@import '../../styles/globals.scss';
+
+.question {
+    margin-bottom: 20px;
+    font-size: 20px;
+    animation: fadeIn 0.5s ease-out forwards;
+    text-align: center;
+}
+
+.progress__bar svg {
+  width: 50px !important;
+  transition: transform 600ms cubic-bezier(.33, .11, .02, .99),
+              filter 600ms cubic-bezier(.33, .11, .02, .99);
+
+  &:hover {
+    transform: scale(1.05) translateY(-0.5rem);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .1)) 
+            drop-shadow(0 8px 8px rgba(0, 0, 0, .15)) 
+            drop-shadow(0 16px 16px rgba(0, 0, 0, .2));
+  }
+
+  &:active {
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .1)) 
+            drop-shadow(0 4px 4px rgba(0, 0, 0, .15));
+  }
+}
+
+.wrapper form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -ms-user-select: none; 
+		-moz-user-select: none; 
+		-webkit-user-select: none; 
+		user-select: none;
+}
+
+.addButton {
+  margin-left: 10px;
+  color: white;
+  background-color: #595959;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.button__next {
+  font-family: $button-font !important;
+  font-weight: 500;
+  position: relative;
+  padding: 10px;
+  min-width: 150px;
+  color: white;
+  text-transform: uppercase;
+  background-size: 100%;
+  z-index: 1;
+  background: transparent;
+  transition: 0.5s;
+  margin-top: 50px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  &.visible {
+    opacity: 1;
+  }
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1d091d;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 50px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * 3px);
+    left: calc(-1 * 3px);
+    height: calc(100% + 3px * 2);
+    width: calc(100% + 3px * 2);
+    background: linear-gradient(60deg, #3860A5, #5D169B, #4C3086, #a166ab);
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+    border-radius: 50px;
+    z-index: -2;
+    transition: 0.5s;
+  }
+}
+
+  .wrapper {
+    padding: 20px 40px;
+  }

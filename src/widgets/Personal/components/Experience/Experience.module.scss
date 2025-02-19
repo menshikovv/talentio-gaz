@@ -1,0 +1,43 @@
+.wrapper {
+    width: 480px;
+    border: 2px solid grey;
+    padding: 20px;
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.experiences {
+    background-color: rgba(194, 194, 194, 0.2);
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.experience {
+    margin-top: 5px;
+    word-wrap: break-word;
+    word-break: break-word;
+    span {
+        font-weight: 700;
+    }
+}
+
+.showMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.editLogo {
+    position: absolute;
+    top: 20;
+    right: 20;
+}

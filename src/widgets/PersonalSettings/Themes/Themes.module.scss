@@ -1,0 +1,38 @@
+.theme__container {
+    display: flex;
+    z-index: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 650px) {
+        flex-direction: column;
+    }
+    img {
+        width: 250px;
+        @media (max-width: 650px) {
+            width: 300px;
+        }
+    }
+}
+
+.item:last-child {
+    @media (min-width: 650px) {
+        margin-left: 20px; 
+    }
+}
+
+.item:first-child {
+    @media (min-width: 650px) {
+        margin-right: 20px;
+    }
+}
+
+.name {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 600ms cubic-bezier(.33,.11,.02,.99);
+        &:hover {
+            transform: scale(1.05)
+                 translateY(-0.5rem);
+        }    
+}

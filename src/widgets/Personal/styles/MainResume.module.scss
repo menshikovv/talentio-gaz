@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    border: 2px solid grey;
+    & > div {
+        min-width: 300px;
+        box-sizing: border-box;
+        @media (max-width: 430px) {
+            min-width: 0;
+        }
+    }
+}
+
+.experience {
+    li {
+        div {
+            margin-bottom: 10px;
+            svg {
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+                margin-right: 8px;
+            }
+
+            p {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                white-space: wrap;
+                text-align: center;
+                min-width: 0; 
+            }
+
+            span {
+                white-space: nowrap;
+                margin: 0 8px;
+            }
+        }
+    }
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    li {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+.logo {
+    width: 20px;
+}
+
+.project {
+    font-size: 20px;
+    span {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.stack, .project, .experience {
+    padding: 30px;
+}
+
+.job {
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 300px;
+}

@@ -1,0 +1,29 @@
+.wrapper {
+    max-width: 400px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.select__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    @media (max-width: 390px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+}
+
+.other {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    color: rgba(229, 229, 229, 0.704);
+}

@@ -1,0 +1,222 @@
+@import '../styles/variables.scss';
+
+#root {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .ant-collapse {
+    border: none;
+  }
+  
+  .ant-input, .ant-input-number-input, .ant-mentions-affix-wrapper, .ant-select-selection-item textarea, .ant-mentions{
+    font-family: $sub-font !important;
+  }
+  
+  #detach-button-host {
+    display: none !important;
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  .ant-collapse-header-text, .ant-radio-wrapper {
+    font-family: $title-font;
+    color: white;
+  }
+  
+  .ant-dropdown-menu {
+    background-color: rgba(136, 136, 136, 0.163) !important;
+    border-radius: 30px !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 400px;
+  }
+  
+  .ant-input-affix-wrapper, .ant-input, .ant-select-selector {
+    background-color: transparent !important;
+    color: white !important;
+  }
+  
+  :where(.css-dev-only-do-not-override-qnu6hi).ant-input:placeholder-shown {
+    text-overflow: initial !important;
+  }
+  
+  .ant-dropdown-menu-item-active {
+    background-color: transparent;
+  }
+  
+  .ant-dropdown-menu-item {
+    color: white !important;
+  
+    &:last-child {
+      color: red !important;
+    }
+  }
+  
+  .ant-mentions-affix-wrapper, .ant-mentions-focused {
+    background-color: transparent !important;
+  
+    textarea {
+      color: white !important;
+    }
+  }
+  
+  .ant-select-dropdown {
+    background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255, 255, 255, 0));
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 22px;
+  }
+  
+  .ant-radio-inner {
+    background-color: transparent !important;
+    border-color: #71717A !important;
+  }
+  
+  .ant-select-selection-item {
+    color: white !important;
+    font-family: $title-font;
+    display: flex !important;
+    justify-content: center;
+  }
+  
+  .ant-btn {
+    background-color: transparent;
+    color: white;
+  
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+  
+  .anticon {
+    fill: white !important;
+  }
+  
+  .ant-select-selection-placeholder, .ant-select-item {
+    color: white !important;
+    background-color: transparent !important;
+    font-family: $sub-font;
+  }
+  
+  .ant-select-selection-item-content {
+    font-family: $sub-font;
+  }
+  
+  .ant-input-number {
+    background-color: transparent !important;
+  }
+  
+  .ant-input-number input::placeholder {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  .ant-input-number-input {
+    color: white !important;
+    text-align: center !important;
+  }
+  
+  ::placeholder {
+    font-family: $sub-font;
+  }
+  
+  .ant-input::placeholder, .rc-textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  .rc-textarea-data-count {
+    color: white !important;
+  }
+  
+  .ant-input-affix-wrapper:focus-within, .ant-input:focus-within {
+    background-color: transparent !important;
+  }
+  
+  .ant-input-affix-wrapper:hover, .ant-input:hover {
+    background-color: transparent !important;
+  }
+  
+  
+  .ant-input-affix-wrapper:active, .ant-input:active {
+    background-color: transparent !important;
+  }
+  
+  .ant-input-show-count-suffix {
+    color: white !important;
+  }
+  
+  .ant-collapse-header {
+    width: 87%;
+    font-size: 20px;
+  }
+  
+  .ant-collapse-content-box p{
+    font-size: 15px !important;
+  }
+  
+  .ant-collapse-content {
+    background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255, 255, 255, 0)) !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-bottom: 20px;
+  }
+  
+  .ant-collapse-content-box {
+    color: white;
+  }
+
+  .ant-input, .ant-select-selector, .ant-mentions {
+    text-align: center !important;
+  }
+
+  .anticon-close path {
+    fill: white !important;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .ant-tag {
+    background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255, 255, 255, 0));
+    color: white;
+    font-family: $title-font;
+    padding: 5px 15px;
+  }
+
+  .anticon svg {
+    fill: white !important;
+  }
+
+  .ant-checkbox-inner {
+    background-color: transparent !important;
+  }
+
+  .ant-color-picker-trigger {
+    background-color: transparent;
+    border: none;
+  }
+
+  .ant-color-picker-trigger-text {
+    color: white !important;
+    font-family: $title-font;
+  }
+
+  .ant-popover-inner {
+    background-color: transparent !important;
+    backdrop-filter: blur(15px) !important;
+  }
+
+  .ant-input-prefix {
+    color: white !important;
+  }
+
+  

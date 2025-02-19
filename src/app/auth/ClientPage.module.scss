@@ -1,0 +1,41 @@
+.wrapper form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 85vh;
+    -ms-user-select: none; 
+		-moz-user-select: none; 
+		-webkit-user-select: none; 
+		user-select: none;
+}
+
+.other {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.138);
+    padding: 15px;
+    backdrop-filter: blur(20px);
+    position: relative;
+    text-align: center;
+
+    a {
+        color: rgb(144, 113, 255);
+    }
+}
+
+.content p {
+    text-align: center;
+    font-size: 15px;
+    color: rgba(241, 241, 241, 0.706);
+    margin-bottom: 10px;
+}

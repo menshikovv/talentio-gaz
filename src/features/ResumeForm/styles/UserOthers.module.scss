@@ -1,0 +1,53 @@
+.wish__salary {
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.wish {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.extra {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    @media (max-width: 430px) {
+        flex-direction: column;
+    }
+  }
+  
+  .employment,
+  .work__time {
+    flex: 1;
+  }
+
+.other {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    color: rgba(229, 229, 229, 0.704);;
+}
+
+.permission, .business_trips {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.checkbox {
+    margin-left: 10px;
+}

@@ -1,0 +1,40 @@
+@mixin button {
+    transition: box-shadow 600ms cubic-bezier(.33, .11, .02, .99),
+                transform 600ms cubic-bezier(.33, .11, .02, .99);
+    background: linear-gradient(60deg, #3860A5, #5D169B, #4C3086, #a166ab);
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  
+    &:hover {
+      box-shadow: 0 4px 4px rgba(0, 0, 0, .1),
+                  0 1px 6px rgba(0, 0, 0, .05),
+                  0 8px 8px rgba(0, 0, 0, .1),
+                  0 16px 16px rgba(0, 0, 0, .1),
+                  8px 32px 32px rgba(0, 0, 0, .15),
+                  8px 64px 64px rgba(0, 0, 0, .15);
+      transform: scale(1.05) translateY(-0.5rem);
+    }
+  
+    &:active {
+      box-shadow: 0 4px 4px rgba(0, 0, 0, .1),
+                  0 1px 6px rgba(0, 0, 0, .05),
+                  0 8px 8px rgba(0, 0, 0, .1),
+                  0 16px 16px rgba(0, 0, 0, .1),
+                  8px 16px 16px rgba(0, 0, 0, .15),
+                  8px 32px 32px rgba(0, 0, 0, .15);
+    }
+  }
+  
+  /* Ключевые кадры для анимации */
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

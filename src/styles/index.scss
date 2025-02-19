@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './variables.scss';
+@import './mixins.scss';
+
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 5px 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.containerResume {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.titleResumeAside {
+  margin-top: 20px;
+  padding: 5px 20px;
+  border: 1px solid rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.containerAsideResume {
+  padding: 15px;
+}
+
+.containerMainResume {
+  padding: 20px;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #808080;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.button {
+  font-family: $sub-font;
+  @include button;
+}
+
+.anticon  {
+  font-family: $title-font !important;
+}
+
+label {
+  color: white !important;
+  font-family: $title-font !important;
+}
+
+input {
+  background-color: transparent !important;
+  font-family: $title-font !important;
+  color: white !important;
+}
+
+.after\:transition-width:after {
+  background-color: rgb(99, 46, 221) !important;
+}
+
+.text-foreground {
+  color: white;
+}
+
+.border-none {
+  border-style: inherit;
+}
+
+.text-default-500 {
+  color: white;
+}
+
+.bg-content1 {
+  background-color: rgba(87, 87, 87, 0.218);
+}
+
+.bg-default-100 {
+  background-color: #363636 !important;
+}

@@ -1,0 +1,34 @@
+.burger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60px;
+    width: 80px;
+    margin: 5px;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease;
+  }
+  
+  .bar {
+    display: flex;
+    width: 40px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    margin: 3px 0;
+    transition: 0.1s;
+    transform-origin: center;
+  }
+  
+  .burger:focus-within .bar {
+    width: 30px;
+    border-radius: 20px;
+  }
+  
+  @media (max-width: 1028px) {
+    .burger {
+        display: flex;
+    }
+  }

@@ -1,0 +1,60 @@
+@import '../../styles/variables.scss';
+
+
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resume {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgba(147, 122, 212, 0.253);
+    min-height: 1000px;
+    max-width: 300px;
+    flex-shrink: 0;
+}
+
+.main {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    min-height: 1000px;
+    background-color: rgba(147, 122, 212, 0.180);
+    flex-grow: 1;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.modResume {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 5px;
+    color: white;
+    font-family: $title-font;
+    transition: all 0.4s ease;
+    &:hover {
+        color: rgb(173, 173, 173);
+    }
+}
+
+.buttons {
+    position: absolute;
+    top: 35px;
+    right: -60px;
+    svg {
+        width: 50px;
+        background-color: rgba(71, 25, 82, 0.694);
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,33 @@
+.button {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    border-radius: 16px;
+  }
+  
+  .iconWrapper {
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .icon {
+    width: 28px;
+    height: 28px;
+    transition: color 0.3s;
+  
+    &.iconLiked {
+      color: #ff4d4d;
+    }
+  
+    &.iconUnliked {
+      color: #ffffff;
+    }
+  }
+  
+  .count {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 4px;
+  }
+  

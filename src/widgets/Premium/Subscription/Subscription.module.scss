@@ -1,0 +1,101 @@
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.cards, .tabs {
+    opacity: 0;
+    animation: fadeInCards 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.profitable {
+    opacity: 0;
+    animation: fadeInCards 1s ease-out forwards;
+    color: #17C964;
+    font-size: 20px;
+}
+
+.card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+.gold {
+    background-color: rgba(255, 237, 72, 0.539);
+}
+
+.silver {
+    background-color: rgba(179, 169, 169, 0.5);
+}
+
+.free {
+    background-color: rgba(218, 203, 203, 0.2);
+}
+
+.active, .inactive {
+    display: flex;
+    margin-bottom: 10px;
+
+    svg {
+        margin-right: 10px;
+    }
+}
+
+@keyframes silverGlow {
+    0% { box-shadow: 0 0 10px rgba(192, 192, 192, 0.4); }
+    50% { box-shadow: 0 0 20px rgba(192, 192, 192, 0.8); }
+    100% { box-shadow: 0 0 10px rgba(192, 192, 192, 0.4); }
+  }
+  
+  .silverGlow {
+    animation: silverGlow 1.5s infinite alternate;
+    border: 2px solid silver;
+    box-shadow: 0 0 15px rgba(192, 192, 192, 0.6);
+  }
+  
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .goldGlow {
+    background: linear-gradient(45deg, #f8e61e, #edb423f6, #ffe712d5);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+  }
+
+@keyframes fadeInCards {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

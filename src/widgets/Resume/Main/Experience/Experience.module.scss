@@ -1,0 +1,23 @@
+.experience__name {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about_job {
+    white-space: pre-line;
+}
+
+.job_name {
+    font-weight: 700;
+}
+
+.job_title {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.about_job {
+    overflow-wrap: break-word;
+    width: 100%;
+}

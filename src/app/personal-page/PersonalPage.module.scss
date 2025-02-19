@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.modResume {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 5px;
+    color: white;
+    font-family: $title-font;
+    transition: all 0.4s ease;
+    &:hover {
+        color: rgb(173, 173, 173);
+    }
+}

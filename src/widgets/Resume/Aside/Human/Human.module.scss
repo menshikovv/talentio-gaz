@@ -1,0 +1,45 @@
+.avatar {
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+    box-shadow: 20px 13px 45px -1px rgba(86, 24, 129, 0.62);
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.direction {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.strip {
+    width: 100%;
+    padding: 0.5px;
+    background-color: rgb(129, 124, 124);
+    margin-bottom: 8px;
+}
+
+.place, .age {
+    margin-left: 20px;
+}
+
+.place {
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.avatar__content {
+    display: flex;
+    justify-content: center;
+}

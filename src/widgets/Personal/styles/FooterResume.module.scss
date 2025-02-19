@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media (max-width: 1022px) {
+        flex-direction: column;
+    }
+}
+
+.education, .language {
+    margin-top: 30px;
+    width: 35%;
+    border: 2px solid grey;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    @media (max-width: 1022px) {
+        width: 100%;
+    }
+}
+
+.flag {
+    width: 30px;
+    margin-right: 8px;
+    display: block;
+}
+
+.language {
+    li {
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        width: 100%;
+        .flag {
+            width: 40px;
+            height: 30px;
+            margin-right: 10px;
+            text-align: center;
+        }
+    }
+}
+
+.education, .language {
+    padding: 30px;
+}

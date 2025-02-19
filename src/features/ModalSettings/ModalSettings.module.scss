@@ -1,0 +1,62 @@
+.contentWrapper {
+    padding: 20px;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modalContent {
+    border-radius: 8px;
+    position: relative;
+    background-color: rgba(136, 136, 136, 0.163);
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.choice {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width: 474px) {
+        font-size: 10px;
+    }
+
+    .vertical__border {
+        width: 1px;
+        height: 30px;
+        background-color: black;
+        margin: 0 10px;
+    }
+
+    p {
+        cursor: pointer;
+    }
+}

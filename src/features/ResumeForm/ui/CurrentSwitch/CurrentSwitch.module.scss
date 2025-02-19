@@ -1,0 +1,6 @@
+.now {
+    display: flex;
+    @media (max-width: 607px) {
+        justify-content: center;
+    }
+}

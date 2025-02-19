@@ -1,0 +1,151 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    border-radius: 8px;
+    position: relative;
+    background-color: rgba(136, 136, 136, 0.163);
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.stacks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stack {
+    display: flex;
+    align-items: center;justify-content: space-between;
+    background-color: rgba(194, 194, 194, 0.2);
+    margin-right: 20px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+
+    svg {
+        margin-left: 10px;
+        width: 20px;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.contentWrapper {
+    padding: 15px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.educations {
+    background-color: rgba(194, 194, 194, 0.2);
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.education {
+    margin-top: 5px;
+    word-wrap: break-word;
+    word-break: break-word;
+    span {
+        font-weight: 700;
+    }
+}
+
+.language {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    margin-right: 8px;
+    width: 40px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    background-color: rgba(194, 194, 194, 0.2);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.experiences {
+    background-color: rgba(194, 194, 194, 0.2);
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.experience {
+    margin-top: 5px;
+    word-wrap: break-word;
+    word-break: break-word;
+    span {
+        font-weight: 700;
+    }
+}
+
+.projects {
+    background-color: rgba(194, 194, 194, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.project {
+    word-wrap: break-word;
+    word-break: break-word;
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+    }
+}

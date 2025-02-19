@@ -1,0 +1,14 @@
+.title {
+    text-align: left;
+    margin-bottom: 10px;
+    @media (max-width: 607px) {
+        text-align: center;
+    }
+}
+
+.startYear {
+    margin-right: 40px;
+    @media (max-width: 607px) {
+        margin-right: 0px;
+    }
+}

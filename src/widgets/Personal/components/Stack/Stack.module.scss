@@ -1,0 +1,45 @@
+.wrapper {
+    width: 480px;
+    border: 2px solid grey;
+    padding: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.stacks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stack {
+    display: flex;
+    align-items: center;
+    background-color: rgba(194, 194, 194, 0.2);
+    margin-right: 20px;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+
+    svg {
+        margin-left: 10px;
+        width: 20px;
+    }
+}
+
+.showMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.editLogo {
+    position: absolute;
+    top: 20;
+    right: 20;
+}

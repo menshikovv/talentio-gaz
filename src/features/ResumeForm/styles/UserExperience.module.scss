@@ -1,0 +1,33 @@
+.dates {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    @media (max-width: 605px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

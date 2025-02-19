@@ -1,0 +1,7 @@
+.opacity {
+    display: flex;
+    align-items: center;
+    @media (max-width: 504px) {
+        margin-bottom: 20px;
+    }
+}

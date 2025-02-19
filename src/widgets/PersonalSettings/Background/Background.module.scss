@@ -1,0 +1,28 @@
+.addBackground {
+    background-color: #363636;
+    width: 35%;
+    height: 130px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    color: #c8c8c8ad;
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: #3636368e;
+        font-size: 8px;
+        svg {
+            width: 50px;
+        }
+    }
+
+    svg {
+        width: 65px;
+        margin-bottom: 5px;
+        transition: all 0.5s ease;
+    }
+}

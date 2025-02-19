@@ -1,0 +1,80 @@
+@mixin fancy-text($gradient) {
+    @keyframes fancy {
+      from {
+        background-position: 0% 50%;
+      }
+      to {
+        background-position: -200% 50%;
+      }
+    }
+    background: $gradient;
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    color: rgba(0, 0, 0, 0);
+    animation: fancy 2s infinite linear;
+  }
+  
+  .fancy-text {
+    @include fancy-text(linear-gradient(to right, #2ebf91, #8360c3, #2ebf91));
+  }
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    @media (min-width: 1029px) {
+      display: none;
+    }
+}
+
+.menu__content {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    max-width: 400px;
+    
+    position: relative;
+    background-color: black;
+    background-color: rgba(136, 136, 136, 0.163);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.closeButton {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.premium span {
+    font-weight: 800;
+    @include fancy-text(linear-gradient(to right, #772ebf, #c269e6, #772ebf));
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 800;
+}
